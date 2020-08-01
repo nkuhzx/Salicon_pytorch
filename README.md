@@ -7,11 +7,15 @@ This repository contains the code to train and run SALICON with pytorch. In our 
 - [Instruciton](##Instruciton)
 
 ##Introduction
+
+
 The implementation details of SALICON is based on [Kotseruba's work](https://github.com/nkuhzx/SALICONtf), whichs is implemented with tensorflow
 
 More detalis please see the [original paper](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Huang_SALICON_Reducing_the_ICCV_2015_paper.pdf)
 
+
 ##Prerequisites
+
 - Python>=3.5.0
 - Pytorch>=1.5.0
 - torchvision>=0.6.0
@@ -20,7 +24,11 @@ More detalis please see the [original paper](https://www.cv-foundation.org/opena
 
 ##Instruciton
 
+
+
 ###Download Dataset
+
+
 
 Download OSIE dataset if you want to train SALICON.
 
@@ -39,6 +47,8 @@ sh download_mit1003.sh
 
 ###Train
 
+
+
 1 . Train a model with default parameters.
 
 ```
@@ -50,7 +60,11 @@ python3 train_net.py
 python3 train_net.py --gpu True --batch_size 1 --lr 0.1 --momentum 0.9 --decay 0.0005 --epochs 500 --checkpoint 1
 ```
 
+
+
 ###Test
+
+
 
 1 . Test the model with default dataset (osie) .
 
@@ -64,7 +78,11 @@ python3 test.py
 python3 test.py --test_dataset mit1003 --gpu True
 ```
 
+
+
 ## Author
+
+
 
 * **Zhengxi Hu**
 
