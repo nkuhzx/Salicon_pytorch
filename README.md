@@ -76,10 +76,25 @@ python3 train_net.py --batch_size 1 --lr 0.1 --momentum 0.9 --decay 0.0005 --epo
 python3 test.py
 ```
 
-1 . Test the model with optional parameters, such as selecting the mit1003 dataset, whether to use gpu, etc.
+2 . Test the model with optional parameters, such as selecting the mit1003 dataset, whether to use gpu, etc.
 
 ```
-python3 test.py --test_dataset mit1003 --gpu True
+python3 test.py --test_dataset mit1003 --gpu
+```
+
+### Download the Model weights
+The model weights must be at the same level as test.py in the src directory
+
+1. Baidu NetDisk
+```
+https://pan.baidu.com/s/1IdWwChDfLmOpRZfyABbdIQ 
+password: 6wpu
+```
+
+2. ecloud NetDisk
+```
+https://cloud.189.cn/t/ZZrumuBFnyia
+password: 5jzf
 ```
 
 
