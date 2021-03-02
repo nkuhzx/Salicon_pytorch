@@ -1,3 +1,5 @@
+
+
 import numpy as np
 import torch
 import torch.nn as nn
@@ -7,6 +9,8 @@ from torchvision import datasets,transforms
 
 import os
 import argparse
+import sys
+sys.path.append(os.path.abspath(os.path.join(os.getcwd(),"..")))
 
 from src.data_utils import getTrainVal_loader
 from src.salicon_model import Salicon

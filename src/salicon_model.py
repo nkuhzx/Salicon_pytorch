@@ -29,31 +29,4 @@ class Salicon(nn.Module):
 
         return out
 
-# from torchviz import make_dot
-# if __name__ == '__main__':
-#
-#     use_cuda='cuda' if torch.cuda.is_available() else 'cpu'
-#
-#     fake_image_corse=torch.randn(300,400,3)
-#     fake_image_corse = fake_image_corse.permute(2, 0, 1).unsqueeze(0).to(use_cuda)
-#
-#     fake_image=torch.randn(600,800,3)
-#     fake_image=fake_image.permute(2,0,1).unsqueeze(0).to(use_cuda)
-#
-#
-#     # print(fake_image.shape)
-#     net=Salicon()
-#     net.to(use_cuda)
-#     #saliency_image=net.forward(fake_image,fake_image_corse)
-#     #saliency_image=saliency_image.squeeze()
-#     #saliency_image=saliency_image.cpu().detach().numpy()
-#
-#     dummy_fine=torch.rand(1,3,600,800).to(use_cuda)
-#     dummy_coarse=torch.rand(1,3,300,400).to(use_cuda)
-#     dummy_output=net(dummy_fine,dummy_coarse)
-#     g=make_dot(dummy_output)
-#     g.render('ourmodel',view=False)
-#     #plt.imshow(saliency_image,cmap='gray')
-#     #plt.show()
-#     #net.forward(fake_image_corse)
 

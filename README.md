@@ -9,7 +9,7 @@ This repository contains the code to train and run SALICON with pytorch. In our 
 ## Introduction
 
 
-The implementation details of SALICON is based on [Kotseruba's work](https://github.com/nkuhzx/SALICONtf), whichs is implemented with tensorflow
+The implementation details of SALICON is based on [Kotseruba's work](https://github.com/ykotseruba/SALICONtf), whichs is implemented with tensorflow
 
 More detalis please see the [original paper](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Huang_SALICON_Reducing_the_ICCV_2015_paper.pdf)
 
@@ -56,8 +56,12 @@ python3 train_net.py
 ```
 2 . You can change the tranning parameters according to your needs, such as whether to use GPU, etc.
 
+
 ```
-python3 train_net.py --gpu True --batch_size 1 --lr 0.1 --momentum 0.9 --decay 0.0005 --epochs 500 --checkpoint 1
+# use gpu
+python3 train_net.py --gpu --batch_size 1 --lr 0.1 --momentum 0.9 --decay 0.0005 --epochs 500 --checkpoint 1
+# use cpu only
+python3 train_net.py --batch_size 1 --lr 0.1 --momentum 0.9 --decay 0.0005 --epochs 500 --checkpoint 1
 ```
 
 
