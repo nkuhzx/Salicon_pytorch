@@ -97,6 +97,11 @@ https://cloud.189.cn/t/ZZrumuBFnyia
 password: 5jzf
 ```
 
+3. Google Drive
+```
+https://drive.google.com/file/d/1hxa1rlm94cV_dABu-1B3Jg3cQ9j_f3-P/view?usp=sharing
+```
+
 
 
 ## Author
